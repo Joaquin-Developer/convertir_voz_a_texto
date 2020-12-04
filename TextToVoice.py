@@ -20,4 +20,9 @@ def textToVoice(texto, lang):
 
 texto = input("Ingrese texto para convertir a voz: ")
 
-textToVoice(texto, "ES")
+if len(texto) == 0:
+    print("Debe ingresar texto")
+else:
+    textToVoice(texto, "ES")
+
+
